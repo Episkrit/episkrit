@@ -1,0 +1,29 @@
+{
+  "name": "episkrit",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Episkrit — language informatics software and services website",
+  "homepage": "https://<your-github-username>.github.io/<your-repo-name>/",
+  "scripts": {
+    "dev": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.0",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.0.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.2"
+  }
+}
